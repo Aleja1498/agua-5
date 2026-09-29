@@ -1,62 +1,130 @@
-/*Aquí llamamos la tipografía desde Google Fonts. Luego veremos cómo hacer esto con cualquier tipografía en otros repositorios*/
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap');
 
-body {
-  background-color: #caedfc;
+html, body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  font-family: 'Newsreader', serif;
+  color: #ffffff;
 }
 
+body {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* 1. Fondo Portada Principal (index.html) */
+.fondo-inicio {
+  background-image: linear-gradient(rgba(0, 50, 70, 0.15), rgba(0, 30, 50, 0.25)), 
+                    url('principal.jpeg');
+}
+
+/* 2. Fondo Rostro (inicio.html con la reflexión) */
+.fondo-rostro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), 
+                    url('inicio.jpeg');
+}
+
+/* 3. Fondo Río Magdalena (rio.html) */
+.fondo-rio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), 
+                    url('rio.jpeg');
+}
+
+/* 4. Fondo Mar El Rodadero (mar.html) */
+.fondo-mar {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), 
+                    url('mar.jpeg');
+}
+
+/* Título de portada */
 h1 {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
+  font-family: 'Newsreader', serif;
+  font-weight: 400;
+  font-style: italic;
   margin: 0;
   position: absolute;
-  font-size: 50px;
+  font-size: 80px;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 
+h1 a {
+  color: #0d3b66;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.6);
+  border: none;
+}
+
+/* Estilos de enlaces general */
 a {
-  color: blue;
+  color: #caedfc;
   text-decoration: none;
+  font-style: italic;
+  border-bottom: 1px dashed #caedfc;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  background-color: white;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
+/* Contenedor central */
 #contenido {
-  width: 60%;
-  height: 100%;
-  margin: 0;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.texto {
-  margin: 0;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 20px;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 60px 20px;
   text-align: center;
 }
 
-.contenedor-imagen {
-  border-style: solid;
-  border-color: white;
-  border-width: 1px;
-  width: 30vw;
-  height: 30vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.caja-reflexion {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  padding: 40px;
+  border-radius: 12px;
+  margin-top: 40px !important;
 }
 
-.contenedor-imagen img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.texto-reflexion {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.cita-ingles {
+  font-style: italic;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  border-left: 2px solid #caedfc;
+  padding-left: 15px;
+  margin: 25px 0;
+  text-align: left;
+}
+
+.navegacion {
+  margin-top: 30px;
+  font-size: 1.4rem;
+}
+
+.texto-poetico {
+  font-size: 2.2rem;
+  margin-top: 30vh;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.contenedor-audio {
+  margin-top: 30px;
+}
+
+.contenedor-audio audio {
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.contenedor-audio audio:hover {
+  opacity: 1;
 }
