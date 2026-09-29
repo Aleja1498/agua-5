@@ -30,7 +30,7 @@ body {
 /* 3. Fondo Río Magdalena (rio.html) */
 .fondo-rio {
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), 
-                    url('rio.jpeg');
+                    url(imgs/rio.jpeg);
 }
 
 /* 4. Fondo Mar El Rodadero (mar.html) */
