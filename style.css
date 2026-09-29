@@ -18,7 +18,7 @@ body {
 /* 1. Fondo Portada Principal (index.html) */
 .fondo-inicio {
   background-image: linear-gradient(rgba(0, 50, 70, 0.15), rgba(0, 30, 50, 0.25)), 
-                    url('principal.jpeg');
+                    url(imgs/principal.jpeg);
 }
 
 /* 2. Fondo Rostro (inicio.html con la reflexión) */
