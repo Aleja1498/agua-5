@@ -36,7 +36,7 @@ body {
 /* 4. Fondo Mar El Rodadero (mar.html) */
 .fondo-mar {
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), 
-                    url('mar.jpeg');
+                    url(imgs/mar.jpeg);
 }
 
 /* Título de portada */
