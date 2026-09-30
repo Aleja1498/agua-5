@@ -128,3 +128,17 @@ a:hover {
 .contenedor-audio audio:hover {
   opacity: 1;
 }
+
+/* Estilo sutil para el reproductor de Spotify */
+.contenedor-audio {
+  margin-top: 40px;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.contenedor-audio:hover {
+  opacity: 1;
+}
